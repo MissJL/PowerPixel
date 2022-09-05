@@ -18,6 +18,7 @@ import Growth from "./Growth";
 import Marketing from "./Marketing";
 import Profile from "./Profile";
 import Settings from "./Settings";
+import Notifications from "./Notifications";
 import "./style.css";
 class App extends Component {
   render() {
@@ -45,7 +46,7 @@ class App extends Component {
             <Route path="/marketing" component={Marketing} />
             <Route path="/profile" component={Profile} />
             <Route path="/settings" component={Settings} />
-            <Route path="/notification" component={Notification} />
+            <Route path="/notifications" component={Notifications} />
             <Redirect exact from="/" to="/dashboard" />
           </Switch>
         </div>

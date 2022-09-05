@@ -7,11 +7,13 @@ function Navbar() {
       <span className="container-fluid">
         <div className="collapse navbar-collapse" id="navbarNav">
           <div className="navbar-nav ">
-            <NavLink to="/search" className="nav-item-2">
+            <a className="nav-item-1">
               <i className="fa-solid fa-magnifying-glass"></i>
-            </NavLink>
-            <NavLink to="/notification" className="nav-item-2">
+            </a>
+            <input type="text" placeholder="" className="searchbox" />
+            <NavLink to="/notifications" className="nav-item-2">
               <i className="fa-solid fa-bell"></i>
+              <div className="togglesearch"></div>
             </NavLink>
             <NavLink to="/settings" className="nav-item-2">
               <i className="fa-solid fa-gear"></i>

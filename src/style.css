@@ -137,6 +137,15 @@ main {
   margin-right: 50px;
 }
 
+.nav-item-1 {
+  margin-right: 10px;
+  color: whitesmoke;
+}
+
+.searchbox {
+  margin-right: 50px;
+}
+
 .nav-item-2 {
   margin-right: 80px;
   color: whitesmoke;
