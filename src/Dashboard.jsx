@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import DatePicker from "./DatePicker";
 import Customers from "./Customers";
@@ -10,47 +10,37 @@ import TopSellingProducts from "./TopSellingProducts";
 import TotalSales from "./TotalSales";
 
 function Dashboard() {
+  const links = [
+    { page: Customers(), link: "/customers", className: "Customers" },
+    { page: Orders(), link: "/orders", className: "Orders" },
+    { page: Earnings(), link: "/earnings", className: "Earnings" },
+    { page: Growth(), link: "/growth", className: "Growth" },
+    { page: Revenue(), link: "/revenue", className: "Revenue" },
+    {
+      page: TopSellingProducts(),
+      link: "/products",
+      className: "TopSellingProducts",
+    },
+    { page: TotalSales(), link: "/sale", className: "TotalSales" },
+  ];
+
   return (
     <div className="nested-dashboard">
       <h1>Dashboard</h1>
       <div className="DatePicker">
         <DatePicker />
       </div>
-      <div className="Customers">
-        <NavLink style={{ textDecoration: "none" }} to="/customers">
-          <Customers />
-        </NavLink>
-      </div>
-      <div className="Orders">
-        <NavLink style={{ textDecoration: "none" }} to="/orders">
-          <Orders />
-        </NavLink>
-      </div>
-      <div className="Earnings">
-        <NavLink style={{ textDecoration: "none" }} to="/earnings">
-          <Earnings />
-        </NavLink>
-      </div>
-      <div className="Growth">
-        <NavLink style={{ textDecoration: "none" }} to="/growth">
-          <Growth />
-        </NavLink>
-      </div>
-      <div className="Revenue">
-        <NavLink style={{ textDecoration: "none" }} to="/revenue">
-          <Revenue />
-        </NavLink>
-      </div>
-      <div className="TopSellingProducts">
-        <NavLink style={{ textDecoration: "none" }} to="/products">
-          <TopSellingProducts />
-        </NavLink>
-      </div>
-      <div className="TotalSales">
-        <NavLink style={{ textDecoration: "none" }} to="/sales">
-          <TotalSales />
-        </NavLink>
-      </div>
+      {links.map((link) => (
+        <div className={link.className}>
+          <NavLink
+            key={link.page}
+            style={{ textDecoration: "none" }}
+            to={link.link}
+          >
+            {link.page}
+          </NavLink>
+        </div>
+      ))}
     </div>
   );
 }
