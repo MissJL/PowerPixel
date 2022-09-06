@@ -8,7 +8,7 @@ function Sidebar() {
         <li className="nav-item">
           <div className="nav-list">
             <NavLink to="/" className="nav-link">
-              <h6 className="nav-text">MAIN</h6>
+              <h6 className="nav-text mt-4">MAIN</h6>{" "}
             </NavLink>
             <NavLink to="/dashboard" className="nav-link">
               <i className="fa-solid fa-gauge-high"></i>
@@ -46,10 +46,7 @@ function Sidebar() {
               <i className="fa-solid fa-users"></i>
               <span className="nav-link-name">Customers</span>
             </NavLink>
-
-            <NavLink to="/" className="nav-link">
-              <h6 className="nav-text">SALES CHANNELS</h6>
-            </NavLink>
+            <h6 className="nav-text">SALES CHANNELS</h6>
             <NavLink to="/onlinestore" className="nav-link">
               <i className="fa-solid fa-store"></i>
               <span className="nav-link-name">Online Store</span>

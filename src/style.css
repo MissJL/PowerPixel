@@ -27,7 +27,7 @@ main {
 .navbar {
   position: fixed;
   background-color: var(--bg-secondary);
-  transition: width 200ms ease;
+  transition: width var(--transition-speed) ease;
 }
 
 .navbar-nav {
@@ -46,6 +46,7 @@ main {
 
 .nav-text {
   color: grey;
+  overflow: hidden;
 }
 
 .nav-link {
