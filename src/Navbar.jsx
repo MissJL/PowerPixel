@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import React from "react";
+import SearchBox from "./Common/SearchBox";
 
 function Navbar() {
   return (
@@ -7,10 +8,7 @@ function Navbar() {
       <span className="container-fluid">
         <div className="collapse navbar-collapse" id="navbarNav">
           <div className="navbar-nav ">
-            <a className="nav-item-1">
-              <i className="fa-solid fa-magnifying-glass"></i>
-            </a>
-            <input type="text" placeholder="" className="searchbox" />
+            <SearchBox />
             <NavLink to="/notifications" className="nav-item-2">
               <i className="fa-solid fa-bell"></i>
               <div className="togglesearch"></div>

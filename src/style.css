@@ -128,21 +128,13 @@ main {
 }
 
 .grid-item-1 {
-  grid-column: 5;
+  grid-column: span 5;
   grid-row: 1;
+  align-self: stretch;
 }
 
 .navbar-2 {
   float: right;
-  margin-right: 50px;
-}
-
-.nav-item-1 {
-  margin-right: 10px;
-  color: whitesmoke;
-}
-
-.searchbox {
   margin-right: 50px;
 }
 
