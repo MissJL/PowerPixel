@@ -9,9 +9,9 @@ export const Container = styled.div`
   margin-right: 80px;
   box-sizing: border-box;
   border-radius: 50px;
-  border: 4px solid #393e46;
+  border: 4px solid #303c6b;
   padding 5px;
-  backgorund: #222831;
+  background: #5b6484;
   transition: all 0.5s;
 
   display: flex;
@@ -23,9 +23,9 @@ export const Container = styled.div`
     hover &&
     css`
       width: 250px;
-      -webkit-box-shadow: 5px 6px 15px 6px rgba(0, 0, 0, 0.74);
-      box-shadow: 6px 6px 15px 6px rgba(0, 0, 0, 0.74);
-      border: 4px solid #00adb5;
+      -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.74);
+      box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.74);
+      border: 4px solid #1b2757;
     `}
 `;
 
