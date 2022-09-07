@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { NavLink } from "react-router-dom";
 import DatePicker from "./DatePicker";
 import Customers from "./Customers";
@@ -6,8 +6,8 @@ import Orders from "./Orders";
 import Earnings from "./Earnings";
 import Growth from "./Growth";
 import Revenue from "./Revenue";
-import TopSellingProducts from "./TopSellingProducts";
 import TotalSales from "./TotalSales";
+import TopSellingProducts from "./TopSellingProducts";
 
 function Dashboard() {
   const links = [

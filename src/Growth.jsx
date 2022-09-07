@@ -1,6 +1,6 @@
 import React from "react";
 
-function Growth(props) {
+function Growth() {
   return (
     <div className="card">
       <div className="card-body">

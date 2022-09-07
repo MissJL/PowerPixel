@@ -11,7 +11,7 @@ import Customers from "./Customers";
 import Discount from "./Discount";
 import Employees from "./Employees";
 import OnlineStore from "./OnlineStore";
-import TopSellingProducts from "./TopSellingProducts";
+import Products from "./Products";
 import TotalSales from "./TotalSales";
 import Revenue from "./Revenue";
 import Growth from "./Growth";
@@ -20,6 +20,7 @@ import Profile from "./Profile";
 import Settings from "./Settings";
 import Notifications from "./Notifications";
 import "./style.css";
+
 class App extends Component {
   render() {
     return (
@@ -35,7 +36,7 @@ class App extends Component {
             <Route path="/analytics" component={Analytics} />
             <Route path="/categories" component={Categories} />
             <Route path="/collections" component={Collections} />
-            <Route path="/products" component={TopSellingProducts} />
+            <Route path="/products" component={Products} />
             <Route path="/revenue" component={Revenue} />
             <Route path="/growth" component={Growth} />
             <Route path="/sales" component={TotalSales} />
