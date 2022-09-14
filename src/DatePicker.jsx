@@ -6,7 +6,7 @@ function Calendar() {
   const currentdate = new Date().toISOString().slice(0, 10);
 
   return (
-    <div className="date-picker">
+    <span className="date-picker">
       <input
         className="input"
         type="date"
@@ -14,7 +14,7 @@ function Calendar() {
         value={date ? date : currentdate}
         onChange={(e) => setDate(e.target.value)}
       />
-    </div>
+    </span>
   );
 }
 

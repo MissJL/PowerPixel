@@ -37,8 +37,8 @@ const columns = [
 
 function TopSellingProducts() {
   return (
-    <div className="card">
-      <div className="card-body">
+    <span className="card">
+      <span className="card-body">
         <h2 className="title-topSellingProducts">Top Selling Products</h2>
         <table className="table">
           <thead className="table-head-topSellingProducts">
@@ -62,8 +62,8 @@ function TopSellingProducts() {
             ))}
           </tbody>
         </table>
-      </div>
-    </div>
+      </span>
+    </span>
   );
 }
 

@@ -27,12 +27,12 @@ function Dashboard() {
 
   return (
     <div className="nested-dashboard">
-      <h1>Dashboard</h1>
-      <div className="DatePicker">
+      <span className="h1">Dashboard</span>
+      <span className="DatePicker">
         <DatePicker />
-      </div>
+      </span>
       {links.map((link) => (
-        <div className={link.className}>
+        <span className={link.className}>
           <NavLink
             key={link.page}
             style={{ textDecoration: "none" }}
@@ -40,7 +40,7 @@ function Dashboard() {
           >
             {link.page}
           </NavLink>
-        </div>
+        </span>
       ))}
     </div>
   );
