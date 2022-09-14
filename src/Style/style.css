@@ -1,0 +1,28 @@
+:root {
+  font-size: 15px;
+  font-family: "Open Sans";
+  --text-primary: whitesmoke;
+  --text-secondary: #ececec;
+  --bg-primary: #0d0d0d;
+  --bg-secondary: #5b6484;
+  --transition-speed: all 1s ease;
+}
+
+body {
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+main {
+  margin-left: 7rem;
+  padding: 1rem;
+  height: 100%;
+  transition: 1.5s;
+}
+
+.grid-container {
+  display: grid;
+}

@@ -1,5 +1,4 @@
 import React from "react";
-import { useState } from "react";
 
 const products = [
   {
@@ -37,26 +36,6 @@ const columns = [
 ];
 
 function TopSellingProducts() {
-  //   const [sortColumn, setSortColumns] = useState({ columns });
-
-  //   const raiseSort = (path) => {
-  //     const sortColumn = { ...columns };
-  //     if (sortColumn.path === path) {
-  //       sortColumn.order = sortColumn.order === "asc" ? "desc" : "asc";
-  //     } else {
-  //       sortColumn.path = path;
-  //       sortColumn.order = "asc";
-  //     }
-  //     return setSortColumns;
-
-  //     function RenderSortIcon(column) {
-  //       if (sortColumn.path !== column.path) return null;
-  //       if (sortColumn.order === "asc")
-  //         return <i className="fa-solid fa-sort-down"></i>;
-  //       return <i className="fa-solid fa-sort-up"></i>;
-  //     }
-  //   };
-
   return (
     <div className="card">
       <div className="card-body">
@@ -65,13 +44,8 @@ function TopSellingProducts() {
           <thead className="table-head-topSellingProducts">
             <tr>
               {columns.map((column) => (
-                <th
-                  key={column.path}
-                  style={{ cursor: "pointer" }}
-                  //   onClick={() => raiseSort(column.path)}
-                >
+                <th key={column.path} style={{ cursor: "pointer" }}>
                   {column.path}
-                  {/* {RenderSortIcon(column)} */}
                 </th>
               ))}
             </tr>

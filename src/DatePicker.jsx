@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./style.css";
+import "./Style/datepicker.css";
 
 function Calendar() {
   const [date, setDate] = useState();
@@ -8,6 +8,7 @@ function Calendar() {
   return (
     <div className="date-picker">
       <input
+        className="input"
         type="date"
         id="currentdate"
         value={date ? date : currentdate}

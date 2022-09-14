@@ -19,17 +19,19 @@ import Marketing from "./Marketing";
 import Profile from "./Profile";
 import Settings from "./Settings";
 import Notifications from "./Notifications";
-import "./style.css";
+import "./Style/style.css";
 
 class App extends Component {
   render() {
     return (
       <div className="grid-container">
-        <Sidebar />
+        <div className="sidebar">
+          <Sidebar />
+        </div>
         <div className="grid-item grid-item-1">
           <Navbar />
         </div>
-        <div className="grid-item grid-item-2">
+        <main>
           <Switch>
             <Route path="/dashboard" component={Dashboard} />
             <Route path="/orders" component={Orders} />
@@ -50,7 +52,7 @@ class App extends Component {
             <Route path="/notifications" component={Notifications} />
             <Redirect exact from="/" to="/dashboard" />
           </Switch>
-        </div>
+        </main>
       </div>
     );
   }

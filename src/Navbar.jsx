@@ -1,12 +1,13 @@
 import { NavLink } from "react-router-dom";
 import React from "react";
 import SearchBox from "./Common/SearchBox";
+import "./Style/navbar.css";
 
 function Navbar() {
   return (
     <nav className="navbar-2 sticky-top navbar-expand-lg ">
       <span className="container-fluid">
-        <div className="collapse navbar-collapse" id="navbarNav">
+        <div className="collapse navbar-collapse">
           <div className="navbar-nav ">
             <SearchBox />
             <NavLink to="/notifications" className="nav-item-2">

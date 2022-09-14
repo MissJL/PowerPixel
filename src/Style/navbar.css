@@ -1,0 +1,13 @@
+.grid-item-1 {
+  grid-row: 1;
+}
+
+.navbar-2 {
+  float: right;
+  margin-right: 50px;
+}
+
+.nav-item-2 {
+  margin-right: 80px;
+  color: var(--text-primary);
+}

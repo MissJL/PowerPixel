@@ -8,6 +8,7 @@ import Growth from "./Growth";
 import Revenue from "./Revenue";
 import TotalSales from "./TotalSales";
 import TopSellingProducts from "./TopSellingProducts";
+import "./Style/dashboard.css";
 
 function Dashboard() {
   const links = [

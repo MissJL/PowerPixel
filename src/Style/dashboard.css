@@ -1,0 +1,68 @@
+.nested-dashboard {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+.nested-dashboard .h1 {
+  grid-column: 1/2;
+}
+
+.nested-dashboard .DatePicker {
+  grid-column: 2/3;
+}
+
+.nested-dashboard .Customers {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.nested-dashboard .Orders {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.nested-dashboard .Earnings {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+
+.nested-dashboard .Growth {
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+
+.nested-dashboard .Revenue {
+  grid-column: 3/6;
+  grid-row: 2/4;
+}
+
+.nested-dashboard .TopSellingProducts {
+  grid-column: 1/4;
+  grid-row: 4/5;
+}
+
+.nested-dashboard .TotalSales {
+  grid-column: 4/6;
+  grid-row: 4/5;
+}
+
+.card {
+  background-color: var(--bg-secondary);
+}
+
+.card-body {
+  color: var(--text-primary);
+}
+
+.table-head-topSellingProducts {
+  background-color: var(--bg-primary);
+}
+
+.table {
+  color: var(--text-primary);
+}
+
+.date-picker .input {
+  background-color: var(--bg-secondary);
+}
