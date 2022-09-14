@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/PowerPixel/static/css/main.4bbae9af.css",
-    "main.js": "/PowerPixel/static/js/main.cfd00a09.js",
+    "main.css": "/PowerPixel/static/css/main.3f566fb2.css",
+    "main.js": "/PowerPixel/static/js/main.28ce2133.js",
     "static/media/fa-solid-900.ttf": "/PowerPixel/static/media/fa-solid-900.b48ad290d0335879a92b.ttf",
     "static/media/fa-brands-400.ttf": "/PowerPixel/static/media/fa-brands-400.f9ee61fab3c11e2f3ed3.ttf",
     "static/media/fa-solid-900.woff2": "/PowerPixel/static/media/fa-solid-900.66104b766c3d0462b3c5.woff2",
@@ -11,11 +11,11 @@
     "static/media/fa-v4compatibility.ttf": "/PowerPixel/static/media/fa-v4compatibility.f601162ae669f88823a3.ttf",
     "static/media/fa-v4compatibility.woff2": "/PowerPixel/static/media/fa-v4compatibility.745989aab0d69cab7e70.woff2",
     "index.html": "/PowerPixel/index.html",
-    "main.4bbae9af.css.map": "/PowerPixel/static/css/main.4bbae9af.css.map",
-    "main.cfd00a09.js.map": "/PowerPixel/static/js/main.cfd00a09.js.map"
+    "main.3f566fb2.css.map": "/PowerPixel/static/css/main.3f566fb2.css.map",
+    "main.28ce2133.js.map": "/PowerPixel/static/js/main.28ce2133.js.map"
   },
   "entrypoints": [
-    "static/css/main.4bbae9af.css",
-    "static/js/main.cfd00a09.js"
+    "static/css/main.3f566fb2.css",
+    "static/js/main.28ce2133.js"
   ]
 }
