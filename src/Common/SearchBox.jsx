@@ -5,7 +5,7 @@ import {
   IconMagnifyingGlass,
   SearchInput,
   IconRightArrow,
-} from "./styleSearchBox";
+} from "../Style/styleSearchBox";
 
 function SearchBox() {
   const targetRef = useRef(null);
